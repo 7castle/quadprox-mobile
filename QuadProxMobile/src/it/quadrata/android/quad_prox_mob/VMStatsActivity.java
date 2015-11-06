@@ -121,7 +121,7 @@ public class VMStatsActivity extends Activity {
 					// VM stats request
 					HttpGet vmStatsRequest = new HttpGet();
 					URI vzStatusUri = new URI(server + "/api2/json/nodes/"
-							+ node + "/openvz/" + vmid + "/status/current");
+							+ node + "/lxc/" + vmid + "/status/current");
 					URI qemuStatusUri = new URI(server + "/api2/json/nodes/"
 							+ node + "/qemu/" + vmid + "/status/current");
 					if (type.equals("vz")) {
@@ -154,7 +154,7 @@ public class VMStatsActivity extends Activity {
 					// Notes request
 					HttpGet notesVmRequest = new HttpGet();
 					URI vzNotesUri = new URI(server + "/api2/json/nodes/"
-							+ node + "/openvz/" + vmid + "/config");
+							+ node + "/lxc/" + vmid + "/config");
 					URI qemuNotesUri = new URI(server + "/api2/json/nodes/"
 							+ node + "/qemu/" + vmid + "/config");
 					if (type.equals("vz")) {
@@ -229,7 +229,7 @@ public class VMStatsActivity extends Activity {
 					HttpClient startVmHttpClient = httpApp.getHttpClient();
 					HttpPost startVmRequest = new HttpPost();
 					URI vzStartUri = new URI(server + "/api2/json/nodes/"
-							+ node + "/openvz/" + vmid + "/status/start");
+							+ node + "/lxc/" + vmid + "/status/start");
 					URI qemuStartUri = new URI(server + "/api2/json/nodes/"
 							+ node + "/qemu/" + vmid + "/status/start");
 					if (type.equals("vz")) {
@@ -322,7 +322,7 @@ public class VMStatsActivity extends Activity {
 					HttpClient stopVmHttpClient = httpApp.getHttpClient();
 					HttpPost stopVmRequest = new HttpPost();
 					URI vzStopUri = new URI(server + "/api2/json/nodes/" + node
-							+ "/openvz/" + vmid + "/status/stop");
+							+ "/lxc/" + vmid + "/status/stop");
 					URI qemuStopUri = new URI(server + "/api2/json/nodes/"
 							+ node + "/qemu/" + vmid + "/status/stop");
 					if (type.equals("vz")) {
@@ -414,7 +414,7 @@ public class VMStatsActivity extends Activity {
 					HttpClient shutdownVmHttpClient = httpApp.getHttpClient();
 					HttpPost shutdownVmRequest = new HttpPost();
 					URI vzStopUri = new URI(server + "/api2/json/nodes/" + node
-							+ "/openvz/" + vmid + "/status/shutdown");
+							+ "/lxc/" + vmid + "/status/shutdown");
 					URI qemuStopUri = new URI(server + "/api2/json/nodes/"
 							+ node + "/qemu/" + vmid + "/status/shutdown");
 					if (type.equals("vz")) {
@@ -506,7 +506,7 @@ public class VMStatsActivity extends Activity {
 					HttpClient consoleVmHttpClient = httpApp.getHttpClient();
 					HttpPost consoleVmRequest = new HttpPost();
 					URI vzConsoleUri = new URI(server + "/api2/json/nodes/" + node
-							+ "/openvz/" + vmid + "/vncproxy"); // nottested
+							+ "/lxc/" + vmid + "/vncproxy"); // nottested
 					URI qemuConsoleUri = new URI(server + "/api2/json/nodes/"
 							+ node + "/qemu/" + vmid + "/vncproxy");
 					if (type.equals("vz")) {
@@ -602,7 +602,7 @@ public class VMStatsActivity extends Activity {
 
 					HttpPost migrateVmRequest = new HttpPost();
 					URI vzStartUri = new URI(server + "/api2/json/nodes/"
-							+ node + "/openvz/" + vmid + "/migrate");
+							+ node + "/lxc/" + vmid + "/migrate");
 					URI qemuStartUri = new URI(server + "/api2/json/nodes/"
 							+ node + "/qemu/" + vmid + "/migrate");
 					if (type.equals("vz")) {

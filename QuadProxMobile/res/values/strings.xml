@@ -18,7 +18,7 @@
     <string name="updatePref_label">Refresh</string>
     <string name="app_description">Android Proxmox Client v2.0</string>
     <string name="hostNodes_label">Nodes: </string>
-    <string name="nodeVZ_label">VZ: </string>
+    <string name="nodeVZ_label">LXC: </string>
     <string name="nodeQM_label">Qemu:</string>
     <string name="cpu_label">Cpu: </string>
     <string name="mem_label">Memory: </string>

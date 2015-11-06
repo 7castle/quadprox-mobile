@@ -293,7 +293,7 @@ public class WidgetProvider extends AppWidgetProvider {
 							running++;
 					}
 					HttpGet vzRequest = new HttpGet(server
-							+ "/api2/json/nodes/" + item.node + "/openvz");
+							+ "/api2/json/nodes/" + item.node + "/lxc");
 					vzRequest.addHeader("Cookie", "PVEAuthCookie=" + ticket);
 					String vzResponse = serverHttpClient.execute(vzRequest,
 							serverResponseHandler);

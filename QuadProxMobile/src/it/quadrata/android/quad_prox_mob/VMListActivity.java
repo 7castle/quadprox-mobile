@@ -199,7 +199,7 @@ public class VMListActivity extends Activity {
 
 					// VZs list items creation
 					HttpGet vzRequest = new HttpGet(server
-							+ "/api2/json/nodes/" + node + "/openvz");
+							+ "/api2/json/nodes/" + node + "/lxc");
 					vzRequest.addHeader("Cookie", "PVEAuthCookie=" + ticket);
 					String vzResponse = serverHttpClient.execute(vzRequest,
 							serverResponseHandler);

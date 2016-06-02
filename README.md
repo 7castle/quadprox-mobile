@@ -5,5 +5,8 @@ After changing this fantastic app started working again.
 
 I added my self-compiled version which stopped working with Proxmox 3!
 
+Please try out:
+QuadProx Mobile_it.quadrata.android.quad_prox_mob.apk
+
 Regard
 erdo
